@@ -35,9 +35,9 @@ main{
     text-align: center;
 }
 .subtitulo{
-    margin: 1rem;
+    margin: 2rem 1rem;
     text-align: justify;
-    
+    font-size: 1.3rem;
 }
 /*Bloco dos sabores e quantidade*/
 .geladoesBox{
