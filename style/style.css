@@ -10,6 +10,7 @@
 :root{
   --cinzaPrincipal:#DDD4DB;  
   --azulPrincipal: #212E5D;
+  --vermelhoPrincipal: #943e49;
 }
 body{
     background-color: var(--cinzaPrincipal);
@@ -79,4 +80,16 @@ main{
 .contador{
     display: flex;
     justify-content: space-between;
+}
+
+/*Footer*/
+footer{
+    border-top: 1px solid var(--azulPrincipal);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--vermelhoPrincipal);
 }
