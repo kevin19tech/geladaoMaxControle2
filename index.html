@@ -22,29 +22,43 @@
         <!--Bloco dos sabores e quantidades-->
         <section class="geladoesBox">
             <!--Bloco 1-->
-            <div class="box1">
-                <!--Titulo Sabores-->
+            <div class="boxTitulos">
                 <div class="titulos">
                     <p>Sabores</p>
                 </div>
-                <!--InputSabores-->
-                <input type="text" class="inputSabores">
-            </div>
-            <!--Bloco 2-->
-            <div class="box2">
                 <div class="titulos">
                     <p>Quantidade</p>
                 </div>
+            </div>
+            <!--Container-->
+            <div class="container">
+                <!--Box1-->
+                <div class="box boxInput"> 
+                    <!--InputSabores-->
+                    <input type="text" class="inputSabores">
+                </div>
+                <!--Box2-->
+                <div class="box">
                     <div class="contador">
                         <!--Botão Menos-->
-                       <button class="buttonContagem" id="buttonMenos">-</button> 
+                       <div class="grupoContador">
+                        <button class="buttonContagem" id="buttonMenos">-</button> 
                        <!--Valor Quantidade-->
                        <p>0</p>
                        <!--Botão Mais-->
-                       <button class="buttonContagem" id="buttonMenos">+</button>
+                       <button class="buttonContagem" id="buttonMais">+</button>
+                       <!--Botão Excluir-->
+                       <button class="btnDelete"><img src="/imagens/delete.png" alt="" height="36px"></button>
+                       </div>
+                       
                     </div>
+                    
+                </div>
                 
             </div>
+            
+            
+            
                 
 
             
@@ -55,5 +69,10 @@
     <footer>
         <p>Desenvolvido por <a href="https://kevin19tech.github.io/portifolioKevin/">Kevin</a></p>
     </footer>
+
+
+    <script src="scripts/scripts.js">
+
+    </script>
 </body>
 </html>
