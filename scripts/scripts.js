@@ -18,3 +18,7 @@ function mais(){
     qtd.innerText = qtdAtual
 }
 
+function addGeladao(){
+    
+}
+

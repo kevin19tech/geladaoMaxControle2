@@ -81,12 +81,15 @@ main{
     background-color: var(--azulPrincipal);
     cursor: pointer;
 }
-
+.btnReset{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .btnDelete{
     background: none;
     border: none;
     cursor: pointer;
-    
 }
 
 /*Parte do contador*/
@@ -110,8 +113,14 @@ main{
 .boxInput{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
+.addGeladao{
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
 /*Footer*/
 footer{
