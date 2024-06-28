@@ -30,7 +30,7 @@
                     <p>Quantidade</p>
                 </div>
             </div>
-            <!--Container-->
+            <!--Container 1-->
             <div class="container">
                 <!--Box1-->
                 <div class="box boxInput"> 
@@ -44,7 +44,7 @@
                             <div class="grupoContador">
                                 <button class="buttonContagem" id="buttonMenos"  onclick="menos(1)">-</button> 
                                 <!--Valor Quantidade-->
-                                <p id="qtdGeladoes">0</p>
+                                <p id="qtdGeladoes" class="marginQtd">0</p>
                                 <!--Botão Mais-->
                                 <button class="buttonContagem" id="buttonMais" onclick="mais(1)">+</button>
                                 <!--Botão Excluir-->
@@ -73,7 +73,7 @@
                                 <button class="buttonContagem" id="buttonMenos" onclick="menos(2)">-</button>
                                 
                                 <!--Valor Quantidade-->
-                                <p id="qtdGeladoes2">0</p>
+                                <p id="qtdGeladoes2" class="marginQtd">0</p>
                                 <!--Botão Mais-->
                                 <button class="buttonContagem" id="buttonMais2"  onclick="mais(2)">+</button>
                                 <!--Botão Excluir-->
@@ -88,6 +88,35 @@
                 
             </div>
 
+            <!--Container 3-->
+            <div class="container" id="container3" style="display: none;">
+                <!--Box1-->
+                <div class="box boxInput"> 
+                    <!--InputSabores-->
+                    <input type="text" class="inputSabores">
+                </div>
+                    <!--Box2-->
+                <div class="box">
+                        <div class="contador">
+                            <!--Botão Menos-->
+                            <div class="grupoContador">
+                                <button class="buttonContagem" id="buttonMenos" onclick="menos(3)">-</button>
+                                
+                                <!--Valor Quantidade-->
+                                <p id="qtdGeladoes3" class="marginQtd">0</p>
+                                <!--Botão Mais-->
+                                <button class="buttonContagem" id="buttonMais3"  onclick="mais(3)">+</button>
+                                <!--Botão Excluir-->
+                                <button class="btnDelete"><img src="/imagens/delete.png" alt="" height="36px"></button>
+                            </div>
+                        
+                        </div>
+                        
+                </div>
+
+                
+                
+            </div>
             
             
             
