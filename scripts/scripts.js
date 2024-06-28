@@ -1,4 +1,3 @@
-
 let qtd = document.getElementById("qtdGeladoes")
 let qtd2 = document.getElementById("qtdGeladoes2")
 let btnMenos = document.getElementById("buttonMenos");
