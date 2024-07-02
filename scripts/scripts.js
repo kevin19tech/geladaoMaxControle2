@@ -91,9 +91,25 @@ function addGeladao(){
 }
 
 function apagar(index){
+    contInputs--
     if(index === 1){
         container1.style.display='none';
-        contInputs--;
+        //contInputs--;
+    }else if(index === 2){
+        container2.style.display='none';
+        //contInputs--;
+    }else if(index === 3){
+        container3.style.display='none';
+        //contInputs--;
+    }else if(index === 4){
+        container4.style.display='none';
+        //contInputs--;
+    }else if(index === 5){
+        container5.style.display='none';
+        //contInputs--;
+    }else if(index === 6){
+        container6.style.display='none';
+        //contInputs--;
     }
     
 }
