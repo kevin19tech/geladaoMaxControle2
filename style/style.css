@@ -102,8 +102,8 @@ main{
 
 .grupoContador{
     display: flex;
-    
-    width: 250px;
+    justify-content: space-between;
+    width: 200px;
     align-items: center;
     
     

@@ -5,6 +5,7 @@ let qtd4 = document.getElementById("qtdGeladoes4")
 let qtd5= document.getElementById("qtdGeladoes5")
 let qtd6= document.getElementById("qtdGeladoes6")
 let btnMenos = document.getElementById("buttonMenos");
+let container1 = document.getElementById("container1");
 let container2 = document.getElementById("container2");
 let container3 = document.getElementById("container3");
 let container4 = document.getElementById("container4");
@@ -70,7 +71,7 @@ function mais(index){
     }
 }
 
-function addGeladao(){
+function addGeladao(1){
     contInputs++
     if(contInputs == 2){
         container2.style.display = 'flex';
@@ -84,6 +85,15 @@ function addGeladao(){
     else if(contInputs == 6){
         container6.style.display = 'flex';
     }
+
+}
+
+function apagar(index){
+    if(index == 1){
+
+        container1.style.display='none';
+    }
+    
 }
 
 
