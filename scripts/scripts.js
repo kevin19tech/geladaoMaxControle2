@@ -5,12 +5,14 @@ let qtd4 = document.getElementById("qtdGeladoes4")
 let qtd5= document.getElementById("qtdGeladoes5")
 let qtd6= document.getElementById("qtdGeladoes6")
 let btnMenos = document.getElementById("buttonMenos");
-let container1 = document.getElementById("container1");
-let container2 = document.getElementById("container2");
-let container3 = document.getElementById("container3");
-let container4 = document.getElementById("container4");
-let container5 = document.getElementById("container5");
-let container6 = document.getElementById("container6");
+let containers = [
+    document.getElementById("container1"),
+    document.getElementById("container2"),
+    document.getElementById("container3"),
+    document.getElementById("container4"),
+    document.getElementById("container5"),
+    document.getElementById("container6")
+]
 let qtdAtual = Number(qtd.value);
 let qtd2Atual = Number(qtd2.value);
 let qtd3Atual = Number(qtd3.value);
@@ -25,6 +27,7 @@ qtd5Atual = 0
 qtd6Atual = 0
 let contInputs = 1
 
+// Função do botão de remover quantidade
 function menos(index){
     //Primeiro botão menos
     if(index === 1 && qtdAtual > 0){
@@ -33,24 +36,25 @@ function menos(index){
     }else if(index === 2 && qtd2Atual > 0){ //Segundo botão menos
         qtd2Atual--
         qtd2.innerText = qtd2Atual
-    }else if(index === 3 && qtd3Atual > 0){ //Segundo botão menos
+    }else if(index === 3 && qtd3Atual > 0){ //Terceiro botão menos
         qtd3Atual--
         qtd3.innerText = qtd3Atual
-    }else if(index === 4 && qtd4Atual > 0){ //Segundo botão menos
+    }else if(index === 4 && qtd4Atual > 0){ //Quarto botão menos
         qtd4Atual--
         qtd4.innerText = qtd4Atual
-    }else if(index === 5 && qtd5Atual > 0){ //Segundo botão menos
+    }else if(index === 5 && qtd5Atual > 0){ //Quinto botão menos
         qtd5Atual--
         qtd5.innerText = qtd5Atual
-    }else if(index === 6 && qtd6Atual > 0){ //Segundo botão menos
+    }else if(index === 6 && qtd6Atual > 0){ //Sexto botão menos
         qtd6Atual--
         qtd6.innerText = qtd6Atual
     }
 }
-
-function mais(index){
+// Função do botão de adicionar quantidade
+function mais(index){ // o index está no html
     if (index === 1){
         qtdAtual++
+        // Atualiza o valor
         qtd.innerText = qtdAtual
 
     } else if (index === 2){
@@ -72,45 +76,23 @@ function mais(index){
 }
 
 function addGeladao(){
-    contInputs++
-    if(contInputs == 1){
-        container1.style.display = 'flex';
-    }else if(contInputs == 2){
-        container2.style.display = 'flex';
-    }else if(contInputs == 3){
-        container3.style.display = 'flex';
-    }else if(contInputs == 4){
-        container4.style.display = 'flex';
-    }else if(contInputs == 5){
-        container5.style.display = 'flex';
-    }
-    else if(contInputs == 6){
-        container6.style.display = 'flex';
+    for(let i =0; i < containers.length; i++){
+        //Se o conteiner estiver oculto
+        if(containers[i].style.display === "none"){
+        // Será exibido
+            containers[i].style.display = "flex";
+            break
+        }
     }
 
 }
 
 function apagar(index){
-    contInputs--
-    if(index === 1){
-        container1.style.display='none';
-        //contInputs--;
-    }else if(index === 2){
-        container2.style.display='none';
-        //contInputs--;
-    }else if(index === 3){
-        container3.style.display='none';
-        //contInputs--;
-    }else if(index === 4){
-        container4.style.display='none';
-        //contInputs--;
-    }else if(index === 5){
-        container5.style.display='none';
-        //contInputs--;
-    }else if(index === 6){
-        container6.style.display='none';
-        //contInputs--;
-    }
+    // Oculta o conteiner
+    containers[index-1].style.display = 'none'
+    // decremento do contInputs
+    contInputs--;
+    
     
 }
 
