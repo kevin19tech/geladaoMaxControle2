@@ -73,7 +73,9 @@ function mais(index){
 
 function addGeladao(){
     contInputs++
-    if(contInputs == 2){
+    if(contInputs == 1){
+        container1.style.display = 'flex';
+    }else if(contInputs == 2){
         container2.style.display = 'flex';
     }else if(contInputs == 3){
         container3.style.display = 'flex';
@@ -91,6 +93,7 @@ function addGeladao(){
 function apagar(index){
     if(index === 1){
         container1.style.display='none';
+        contInputs--;
     }
     
 }
