@@ -71,7 +71,7 @@ function mais(index){
     }
 }
 
-function addGeladao(1){
+function addGeladao(){
     contInputs++
     if(contInputs == 2){
         container2.style.display = 'flex';
@@ -89,8 +89,7 @@ function addGeladao(1){
 }
 
 function apagar(index){
-    if(index == 1){
-
+    if(index === 1){
         container1.style.display='none';
     }
     
